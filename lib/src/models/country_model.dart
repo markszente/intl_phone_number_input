@@ -38,8 +38,8 @@ class Country {
       alpha3Code: data['alpha_3_code'],
       dialCode: data['dial_code'],
       flagUri: 'assets/flags/${data['alpha_2_code'].toLowerCase()}.png',
-      nameTranslations: data['nameTranslations'] != null
-          ? Map<String, String>.from(data['nameTranslations'])
+      nameTranslations: data['name_translations'] != null
+          ? Map<String, String>.from(data['name_translations'])
           : null,
     );
   }
